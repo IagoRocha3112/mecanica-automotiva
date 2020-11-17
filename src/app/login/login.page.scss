@@ -1,0 +1,31 @@
+:host {
+  
+    --ion-background-color: #fff;
+
+   /* ion-content {
+
+       --background: url(/assets/bg-splashscreen.jpg) 0 0/100% 100% no-repeat;
+    } */
+    
+    .logo {
+      text-align: center;
+      margin-top: 20%;
+    }
+  
+    ion-grid {
+      max-width: 540px;
+    }
+
+    @media (min-width: 1024px) {
+  
+        .logo {
+            margin-top: 5% !important;
+        }
+        ion-grid {
+            max-width: 300px !important;
+        }
+    
+      
+      }
+  
+  }

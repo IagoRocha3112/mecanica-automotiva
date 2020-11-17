@@ -1,0 +1,39 @@
+<ion-content padding>
+  <!-- FORM LOGIN -->
+  <form [formGroup]="credentialsForm" (ngSubmit)="onSubmit()">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <!-- LOGO OF APPLICATION -->
+          <div class="logo">
+            <img src="../assets/logo_1.png">
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
+     
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+      
+      
+      <ion-row>
+        <ion-col class="ion-text-center ion-padding-top">
+          <a href="#" style="font-size: small;">Esqueci minha senha</a>
+          <ion-button class="ion-margin-top" expand="full" type="submit" [disabled]="!credentialsForm.valid">Login</ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="ion-text-center ion-padding-top">
+          <ion-button type="button" fill="outline">Criar uma conta</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
