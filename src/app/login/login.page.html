@@ -1,4 +1,4 @@
-<ion-content padding>
+<ion-content class="login-background" padding>
   <!-- FORM LOGIN -->
   <form [formGroup]="credentialsForm" (ngSubmit)="onSubmit()">
     <ion-grid>
@@ -6,32 +6,33 @@
         <ion-col>
           <!-- LOGO OF APPLICATION -->
           <div class="logo">
-            <img src="../assets/logo_1.png">
+            <img src="../assets/repair.png">
           </div>
         </ion-col>
       </ion-row>
 
       <ion-item>
-        <ion-label position="floating">Email</ion-label>
+        <ion-label color="light" position="stacked">Email</ion-label>
         <ion-input type="email" formControlName="email"></ion-input>
       </ion-item>
      
       <ion-item>
-        <ion-label position="floating">Password</ion-label>
+        <ion-label color="light" position="stacked">Senha</ion-label>
         <ion-input type="password" formControlName="password"></ion-input>
       </ion-item>
       
       
       <ion-row>
-        <ion-col class="ion-text-center ion-padding-top">
-          <a href="#" style="font-size: small;">Esqueci minha senha</a>
-          <ion-button class="ion-margin-top" expand="full" type="submit" [disabled]="!credentialsForm.valid">Login</ion-button>
+        <ion-col class="ion-text-center">
+          <a href="#">Esqueci minha senha</a>
+          <br />
+          <ion-button mode="ios" class="btn-login ion-margin-top" type="submit" [disabled]="!credentialsForm.valid">ENTRAR</ion-button>
         </ion-col>
       </ion-row>
 
       <ion-row>
-        <ion-col class="ion-text-center ion-padding-top">
-          <ion-button type="button" fill="outline">Criar uma conta</ion-button>
+        <ion-col class="ion-text-center">
+          <ion-button class="btn-register" mode="ios" color="light" type="button" fill="clear">Cadastre-se</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
