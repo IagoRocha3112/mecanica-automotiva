@@ -30,6 +30,13 @@ const routes: Routes = [
             import('modules/error/error-routing.module').then(m => m.ErrorRoutingModule),
     },
     {
+        path: 'suppliers',
+        loadChildren: () =>
+            import('modules/suppliers/suppliers-routing.module').then(
+                m => m.SuppliersRoutingModule
+            ),
+    },
+    {
         path: 'tables',
         loadChildren: () =>
             import('modules/tables/tables-routing.module').then(m => m.TablesRoutingModule),
