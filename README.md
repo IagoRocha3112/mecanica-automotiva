@@ -1,6 +1,20 @@
-# PROJETO INTEGRADO DE ANALISES E DESENVOLVIMENTO DE SISTEMAS
+#### PROJETO INTEGRADO DE ANALISES E DESENVOLVIMENTO DE SISTEMAS
 
-## MEU PROJETO 
+### Telas do protótipo
+
+![login](https://user-images.githubusercontent.com/26936748/101261479-49afd380-3716-11eb-9a5f-3b5c4c9705e2.png)
+
+![cadastro de usuário](https://user-images.githubusercontent.com/26936748/101261486-5502ff00-3716-11eb-8ce8-74ab41ebb308.png)
+
+![recuperação de senha](https://user-images.githubusercontent.com/26936748/101261488-592f1c80-3716-11eb-872d-21d503492f8c.png)
+
+![cadastro de fornecedor pj](https://user-images.githubusercontent.com/26936748/101261492-5fbd9400-3716-11eb-9622-4ef6ab5de505.png)
+
+![cadastro de fornecedor pf](https://user-images.githubusercontent.com/26936748/101261494-62b88480-3716-11eb-94bc-fc0f1b998526.png)
+
+![cadastro de produtos](https://user-images.githubusercontent.com/26936748/101261498-65b37500-3716-11eb-9261-830ed739baa2.png)
+
+
 ### Requisitos funcionais
 
 - Interface  para autenticação de usuários (login);
@@ -25,22 +39,10 @@
 - O acesso ao sistema depende da conexão com a internet e tem suporte aos principais navegadores do mercado, tais como: Google Chrome, Edge, Internet Explorer, Safari e Firefox.
 
 
-### Telas do protótipo
-
-![login](https://user-images.githubusercontent.com/26936748/101261479-49afd380-3716-11eb-9a5f-3b5c4c9705e2.png)
-
-![cadastro de usuário](https://user-images.githubusercontent.com/26936748/101261486-5502ff00-3716-11eb-8ce8-74ab41ebb308.png)
-
-![recuperação de senha](https://user-images.githubusercontent.com/26936748/101261488-592f1c80-3716-11eb-872d-21d503492f8c.png)
-
-![cadastro de fornecedor pj](https://user-images.githubusercontent.com/26936748/101261492-5fbd9400-3716-11eb-9622-4ef6ab5de505.png)
-
-![cadastro de fornecedor pf](https://user-images.githubusercontent.com/26936748/101261494-62b88480-3716-11eb-94bc-fc0f1b998526.png)
-
-![cadastro de produtos](https://user-images.githubusercontent.com/26936748/101261498-65b37500-3716-11eb-9261-830ed739baa2.png)
-
 
 ### Notas
+
+[Link da apresentação em PDF](https://drive.google.com/file/d/1e5nVOyXTj1ZcOknnRDy5Vmc0Kgi5-lPv/view?usp=sharing)
 
 Foi utilizado como base o tema [SB Admin Angular](https://github.com/StartBootstrap/sb-admin-angular).
 
@@ -53,11 +55,6 @@ Nesse projeto, foi solicitado que os alunos descrevessem de forma sucinta como f
 Com base no projeto do colega, vocês devem realizar o levantamento de requisitos funcionais e não funcionais, que descrevem o que um sistema ou componente devem possuir para satisfazer um contrato, padrão ou especificação.
 
 Após etapa de levantamento de requisitos, você terá que criar um protótipo (tela) para automatizar o controle de uma MECANICA DE AUTOMÓVEIS. Com o protótipo, compreenderemos as necessidades dos usuários.
-
-Projetos selecionados para apoio:
-
-  [AMAURI SOUSA AZEVEDO RGM 20421532.pdf](https://bb.cruzeirodosulvirtual.com.br/bbcswebdav/pid-8610244-dt-content-rid-112778068_1/xid-112778068_1)
-
 
 O que será cobrado para avaliação do projeto:
 
