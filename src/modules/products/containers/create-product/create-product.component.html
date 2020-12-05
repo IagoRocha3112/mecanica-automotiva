@@ -1,0 +1,74 @@
+<sb-layout-dashboard>
+    <sb-dashboard-head title="" [hideBreadcrumbs]="false"></sb-dashboard-head>
+    <div class="card shadow-lg border-0 rounded-lg">
+        <div class="card-header"><h5 class="text-center font-weight-light my-4">Cadastro de Produto</h5></div>
+        <div class="card-body">
+            <form>
+                <div class="form-row">
+                    <div class="col-md-4">
+                        <div class="form-group"><label class="small mb-1">Código</label><input class="form-control py-4" type="number" placeholder="Código do Produto" /></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group"><label class="small mb-1">Descrição</label><input class="form-control py-4"  type="text" placeholder="Descrição do Produto" /></div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group"><label class="small mb-1">Quantidade</label><input class="form-control py-4" type="number" placeholder="" /></div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label class="small mb-1">Fornecedor</label>
+                            <select name="" id="" class="form-control" placeholder="Selecione um Fornecedor">
+                                <option value="" disabled>Selecione um Fornecedor</option>
+                                <option>Mercado Car Aricanduva</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-group">
+                            <label class="small mb-1">Valor de Compra</label>
+                            <input type="text" class="form-control" placeholder="R$ 0,00">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="form-group">
+                            <label class="small mb-1">Valor de Venda</label>
+                            <input type="text" class="form-control" placeholder="R$ 0,00">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="col">
+                                    <div class="form-group text-center">
+                                        <label class="small mb-1"></label>
+                                        <img *ngIf="imageOfProduct" [src]="imageOfProduct" height="150">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group text-center">
+                                        <label class="small mb-1"></label>
+                                        <button type="button" class="btn btn-secondary btn-sm" *ngIf="!imageOfProduct" (click)="uploadImage()">Adicionar Foto</button>
+                                        <button type="button" class="btn btn-danger btn-sm" *ngIf="imageOfProduct" (click)="imageOfProduct = undefined">Remover Foto</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label class="small mb-1">Observações</label>
+                            <textarea class="form-control" placeholder=""></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block">Cadastrar Produto</a></div>
+
+            </form>
+        </div>
+    </div>
+
+</sb-layout-dashboard>

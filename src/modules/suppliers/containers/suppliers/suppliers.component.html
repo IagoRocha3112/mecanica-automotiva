@@ -1,0 +1,112 @@
+<sb-layout-dashboard>
+    <sb-dashboard-head title="" [hideBreadcrumbs]="false"></sb-dashboard-head>
+    <div class="card shadow-lg border-0 rounded-lg">
+        <div class="card-header"><h5 class="text-center font-weight-light my-4">Cadastro de Fornecedor</h5></div>
+        <div class="card-body">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" [class.active]="tabActive === 'cnpj'" (click)="tabActive = 'cnpj'" role="tab" data-toggle="tab">Pessoa Jurídica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [class.active]="tabActive === 'cpf'" (click)="tabActive = 'cpf'" role="tab" data-toggle="tab">Pessoa Física</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-2">
+                <form>
+                    <div class="tab-pane fade" [class.d-none]="tabActive === 'cnpj'" [class.active]="tabActive === 'cpf'" [class.show]="tabActive === 'cpf'" id="cpf">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group"><label class="small mb-1" >Nome</label><input class="form-control py-4" type="text" placeholder="Digite seu primeiro nome" /></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label class="small mb-1">Sobrenome</label><input class="form-control py-4" type="text" placeholder="Digite seu último nome" /></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-4">
+                                <div class="form-group"><label class="small mb-1">RG</label><input class="form-control py-4" type="text" placeholder="Digite o seu RG" /></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group"><label class="small mb-1">CPF</label><input class="form-control py-4" type="text" placeholder="Digite o seu CPF" /></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group"><label class="small mb-1">Data de Nascimento</label><input class="form-control py-4" type="text" placeholder="Informe sua data de nascimento" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" [class.d-none]="tabActive === 'cpf'" [class.active]="tabActive === 'cnpj'" [class.show]="tabActive === 'cnpj'" id="cnpj">
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group"><label class="small mb-1">Nome Fantasia</label><input class="form-control py-4" type="text" placeholder="Digite seu Nome Fantasia" /></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group"><label class="small mb-1">Razão Social</label><input class="form-control py-4" type="text" placeholder="Digite sua Razão Social" /></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"><label class="small mb-1">CNPJ</label><input class="form-control py-4"  type="text" placeholder="Digite o CNPJ da empresa" /></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"><label class="small mb-1">I.E.</label><input class="form-control py-4"  type="text" placeholder="Inscrição Estadual" /></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"><label class="small mb-1">I.M.</label><input class="form-control py-4"  type="text" placeholder="Inscrição Municipal" /></div>
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-3">
+                            <div class="form-group"><label class="small mb-1">E-mail</label><input class="form-control py-4"  type="email" aria-describedby="emailHelp" placeholder="Digite seu endereço de e-mail" /></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group"><label class="small mb-1">Telefone fixo</label><input class="form-control py-4"  type="tel" placeholder="Digite um telefone fixo" /></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group"><label class="small mb-1">Telefone celular</label><input class="form-control py-4" type="tel" placeholder="Digite um telefone celular" /></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group"><label class="small mb-1">Contato</label><input class="form-control py-4" type="text" placeholder="Digite o nome do contato" /></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-2">
+                            <div class="form-group"><label class="small mb-1">CEP</label><input class="form-control py-4" type="number" placeholder="00000-000" /></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><label class="small mb-1">Endereço</label><input class="form-control py-4"  type="text" placeholder="Digite o endereço" /></div>
+                        </div>
+                        <div class="col-md-2 col-4">
+                            <div class="form-group"><label class="small mb-1">Número</label><input class="form-control py-4" type="number" placeholder="Nº" /></div>
+                        </div>
+                        <div class="col-md-2 col-8">
+                            <div class="form-group"><label class="small mb-1">Complemento</label><input class="form-control py-4" type="text" placeholder="Ex.: Apto. 7" /></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-5">
+                            <div class="form-group"><label class="small mb-1">Bairro</label><input class="form-control py-4" type="text" placeholder="Bairro" /></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-group"><label class="small mb-1">Estado</label><input class="form-control py-4" type="text" placeholder="UF" /></div>
+                        </div>
+                        <div class="col-5">
+                            <div class="form-group"><label class="small mb-1">Cidade</label><input class="form-control py-4" type="text" placeholder="Cidade" /></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="small mb-1">Observações</label>
+                                <textarea class="form-control" placeholder=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block">Criar Fornecedor</a></div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</sb-layout-dashboard>

@@ -1,100 +1,75 @@
-# SB Admin Angular
+# PROJETO INTEGRADO DE ANALISES E DESENVOLVIMENTO DE SISTEMAS
 
-SB Admin Angular is a free and open-sourced Bootstrap themed Angular 9 starter project.
+## MEU PROJETO 
+### Requisitos funcionais
 
-It shares the same project structure and subset of tooling from our professional offering,
-[SB Admin Pro Angular](https://themes.startbootstrap.com/sb-admin-pro-angular/),
-so much of the [SB Admin Pro Angular Documentation](https://docs.startbootstrap.com/sb-admin-pro-angular/quickstart) is applicable.
+- Interface  para autenticação de usuários (login);
+- Interface para cadastro de usuários;
+- Interface para recuperação de senha;
+- Interface para cadastro de fornecedores;
+- Interface para cadastro de produtos/serviços;
+- Interface para cadastro de clientes;
+- Interface para criação de orçamento;
+- Interface para criação de ordem de serviço;
+- Dashboard personalizável de acordo com as permissões de cada usuário para exibição das principais informações, como: faturamento do mês, quantidade de serviços em execução, orçamentos aguardando aprovação e aprovados para execução.
 
-In particular the documentation for [Structure](https://docs.startbootstrap.com/sb-admin-pro-angular/structure-root-level),
-and the documentation for [SBPro Schematics](https://docs.startbootstrap.com/sb-admin-pro-angular/development-general#sb-pro-schematics)
 
-SB Admin Angular comes with a base implementation of navigation and layouts.
+### Requisitos não funcionais
 
-For professionally designed components (including an advanced SideNav), 100% code coverage,
-starter cypress tests and more, please consider our professional offering:
-[SB Admin Pro Angular](https://themes.startbootstrap.com/sb-admin-pro-angular/)
+- Arquitetura escalável de alta disponibilidade que permitirá um acesso ilimitado de usuários.
+- Segurança dos dados, as informações de cada usuário são mantidas em sigilo, podendo ser excluídas ou fornecidas se solicitado pelo usuário.
+- Controle de permissões de usuários com diferentes perfis.
+- Possibilidade de convidar outros usuários para fazer parte de uma conta/organização.
+- Facilidade de uso, confiabilidade, usabilidade e documentação;
+- Design responsivo e interativo (compatível com todos os tamanhos de telas);
+- O acesso ao sistema depende da conexão com a internet e tem suporte aos principais navegadores do mercado, tais como: Google Chrome, Edge, Internet Explorer, Safari e Firefox.
 
-## Quick Start
 
-```bash
-git clone git@github.com:startbootstrap/sb-admin-angular.git
-cd sb-admin-angular
-npm install
-npm start
-```
+### Telas do protótipo
 
-`npm start` should open a browser window to <http://localhost:4200>
+![login](https://user-images.githubusercontent.com/26936748/101261479-49afd380-3716-11eb-9a5f-3b5c4c9705e2.png)
 
-By default angular runs on port 4200. To change this port you can run:
+![cadastro de usuário](https://user-images.githubusercontent.com/26936748/101261486-5502ff00-3716-11eb-8ce8-74ab41ebb308.png)
 
-```bash
-# This starts the development server on port 4205,
-# but you can use any port you'd like
-export PORT=4205 && npm start
-```
+![recuperação de senha](https://user-images.githubusercontent.com/26936748/101261488-592f1c80-3716-11eb-872d-21d503492f8c.png)
 
-## Tests
+![cadastro de fornecedor pj](https://user-images.githubusercontent.com/26936748/101261492-5fbd9400-3716-11eb-9622-4ef6ab5de505.png)
 
-### Unit Tests
+![cadastro de fornecedor pf](https://user-images.githubusercontent.com/26936748/101261494-62b88480-3716-11eb-94bc-fc0f1b998526.png)
 
-```bash
-npm run test
-```
+![cadastro de produtos](https://user-images.githubusercontent.com/26936748/101261498-65b37500-3716-11eb-9261-830ed739baa2.png)
 
-### e2e
 
-```bash
-npm run e2e
-```
+### Notas
 
-## Production
+Foi utilizado como base o tema [SB Admin Angular](https://github.com/StartBootstrap/sb-admin-angular).
 
-SB Admin Angular come with a production ready Dockerfile and build scripts.
 
-You can get Docker [here](https://www.docker.com/get-started)
 
-```bash
-npm run docker:build
-npm run docker:run
-```
+## DESCRIÇÃO DA PROPOSTA DO PROJETO
 
-## Generate Code
+Nesse projeto, foi solicitado que os alunos descrevessem de forma sucinta como funciona o sistema de Controle de Estoque de um MECANICA DE AUTOMÓVEIS.
 
-```bash
-npm run generate:module -- --path src/modules --name Test
-npm run generate:component -- --path src/modules/test/containers --name Test
-npm run generate:component -- --path src/modules/test/components --name Test
-npm run generate:directive -- --path src/modules/test/directives --name Test
-npm run generate:service -- --path src/modules/test/services --name Test
-```
+Com base no projeto do colega, vocês devem realizar o levantamento de requisitos funcionais e não funcionais, que descrevem o que um sistema ou componente devem possuir para satisfazer um contrato, padrão ou especificação.
 
-_Note: Creating a Component and a Container use the same command,
-the difference is just the paths and how they are used._
+Após etapa de levantamento de requisitos, você terá que criar um protótipo (tela) para automatizar o controle de uma MECANICA DE AUTOMÓVEIS. Com o protótipo, compreenderemos as necessidades dos usuários.
 
-### MVCC
+Projetos selecionados para apoio:
 
-Containers and Components are both Angular Components, but used in different ways.
+  [AMAURI SOUSA AZEVEDO RGM 20421532.pdf](https://bb.cruzeirodosulvirtual.com.br/bbcswebdav/pid-8610244-dt-content-rid-112778068_1/xid-112778068_1)
 
-Containers should arrange Components.
 
-Obviously this can become subjective, but MVCC is the paradigm that we subscribe to.
+O que será cobrado para avaliação do projeto:
 
-## Troubleshooting
+Levantamento de requisitos FUNCIONAIS e NÃO FUNCIONAIS.
+Protótipo - Com três telas (Tela de login obrigatória).
+[Conceito de protótipo A noção de protótipo deriva da língua grega. Este termo é usado para mencionar o primeiro dispositivo que se desenvolve/concebe de algo e que serve como modelo para fabricar os mesmos como amostra. Por norma, um protótipo é usado em jeito de prova antes de proceder à produção em série do elemento em questão.]
 
-### npm start
+Esse projeto deve atender os itens propostos no Critério e avaliação:
 
-If you receive memory issues adjust
-`max_old_space_size` in the `ng` command of the `package.json`:
+1. Projeto deve conter até 4 páginas;
 
-```json
-"ng": "cross-env NODE_OPTIONS=--max_old_space_size=2048 ./node_modules/.bin/ng",
-```
+Primeira página com: Nome do aluno, curso, referenciar o software utilizado para criar as telas e os requisitos funcionais e não funcionais e as três últimas com as telas e suas descrições.
 
-You can adjust 2048 to any number you need.
+2. Descrição dos requisitos do projeto deve ser clara e objetiva.
 
-For more information about why you may need `--max_old_space_size`
-see [this article](https://medium.com/@ashleydavis75/node-js-memory-limitations-30d3fe2664c0).
-
-Keep in mind that this project only uses node to build the angular application.
-There is no production dependency on node.

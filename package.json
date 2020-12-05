@@ -39,6 +39,7 @@
         "@ng-bootstrap/ng-bootstrap": "8.0.0",
         "@prettier/plugin-pug": "1.10.1",
         "chart.js": "2.9.4",
+        "ngx-image-compress": "^11.0.3",
         "object-hash": "2.0.3",
         "rxjs": "6.6.3",
         "tslib": "2.0.3",
